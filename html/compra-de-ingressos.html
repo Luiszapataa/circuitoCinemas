@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos</title>
+    <link rel="stylesheet" href="../css/ingressos.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="shortcut icon" href="../src/header-footer/cineDev.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<header>
+
+    <a href="pg-inicial.html" class="semsublinhado">
+        <div class="logo">
+            <img src="../src/header-footer/cineDev.jpg">
+            <h1 class="cssanimation sequence leFadeInRight" style="letter-spacing: 3px;">CineDev</h1>
+        </div>
+    </a>
+
+    <nav>
+        <ul>
+            <li class="btn">
+                <a href="promocoes.html" class="text-header">
+                    <img src="../src/header-footer/dolar.png" class="img-header">Promoções
+                </a>
+            </li>
+
+            <li class="btn">
+                <div class="menu">
+                    <button class="menu-btn"><img src="../src/header-footer/pasta.png"
+                            class="img-header">Serviços</button>
+                    <div class="dropdown">
+                        <a href="sessão-escola.html" class="text-header">Seção escola</a>
+                        <a href="Sessão-empresarial.html" class="text-header">Seção empresarial</a>
+                    </div>
+                </div>
+
+
+            </li>
+
+            <li class="btn">
+                <a href="produtos.html" class="text-header">
+                    <img src="../src/header-footer/cesta-de-compras.png" class="img-header">Produtos
+                </a>
+            </li>
+
+            <li class="btn">
+                <a href="sobreNos.html" class="text-header">
+                    <img src="../src/header-footer/icon-local.png" class="img-header">Sobre Nós
+                </a>
+            </li>
+
+            <li class="btn">
+                <a href="login.html" class="text-header">
+                    <img src="../src/header-footer/login-alt.png" class="img-header">Login
+                </a>
+            </li>
+
+            <li class="btn">
+                <a href="https://wa.me/seu-numero" target="_blank">
+                    <img src="../src/header-footer/whatsapp.png" alt="WhatsApp" class="icon">
+                </a>
+            </li>
+
+            <li class="btn">
+                <a href="https://instagram.com/cinedevv_" target="_blank">
+                    <img src="../src/header-footer/instagram.png" alt="instagram" class="icon">
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<body class="corpo-ingressos">
+    <div class="accordion2">
+        <h1>INGRESSOS</h1>
+    </div>
+
+    <div class="accordion">
+        <p> Escolha seus ingressos</p>
+        <p>você participa do clube de Benefícios</p>
+        <p>CineDev: Por favor fazer login para verificar se você é participante do CineDev</p>
+        <div>
+            <div class="quadrado">
+                <button class="accordion">Ingressos Tradicionais</button>
+                <div class="panel">
+                    <p>Ingressos</p>
+
+                    <p>Inteira</p>
+                    <select class="form-control cmbQuantity" id="inteira" onchange="calcularTotal()">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <p>Ingresso: R$ 30,00 + Serviços: R$ 3,60</p>
+
+                    <p>Meia</p>
+                    <select class="form-control cmbQuantity" id="meia" onchange="calcularTotal()">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <p>Ingresso: R$ 15,00 + Serviço: R$ 1,80</p>
+
+                    <p class="total" id="totalTradicionais">Total: R$ 0,00</p>
+                </div>
+
+                <button class="accordion">Convites e Vales</button>
+                <div class="panel">
+                    <p>Ingressos</p>
+
+                    <p>Convite Digital</p>
+                    <select class="form-control cmbQuantity" id="convite" onchange="calcularTotal()" required>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <p>Ingresso: R$ 0,00 + Serviço: R$ 0,00</p>
+                    <p class="total" id="totalConvites">Total: R$ 0,00</p>
+                </div>
+
+                <button class="accordion">Clube de Benefícios</button>
+                <div class="panel">
+                    <p>Ingresso</p>
+                    <p>Circuito Club: Ingresso Grátis</p>
+                    <p>Por favor fazer login para verificar se você é participante do Circuito Club</p>
+                    <p>Ingresso: R$ 0,00 + Serviço: R$ 0,00</p>
+
+                    <p class="total" id="totalClub">Total: R$ 0,00</p>
+                </div>
+                <p class="total" id="SUBTOTAL">SUBTOTAL: R$ 0,00</p>
+                <p class="total" id="TOTALAPAGAR">TOTAL A PAGAR: R$ 0,00</p>
+
+            </div>
+            <button type="submit" class="buttom">Continuar</button>
+
+
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                for (var i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+
+                function calcularTotal() {
+                    const precoInteira = 30.00 + 3.60;
+                    const precoMeia = 15.00 + 1.80;
+                    const precoConvite = 0.00;
+
+                    const quantidadeInteira = parseInt(document.getElementById("inteira").value);
+                    const quantidadeMeia = parseInt(document.getElementById("meia").value);
+                    const quantidadeConvite = parseInt(document.getElementById("convite").value);
+
+                    const totalTradicionais = (quantidadeInteira * precoInteira) + (quantidadeMeia * precoMeia);
+                    const totalConvites = quantidadeConvite * precoConvite;
+
+                    document.getElementById("totalTradicionais").innerText = "Total Tradicionais: R$ " + totalTradicionais.toFixed(2);
+                    document.getElementById("totalConvites").innerText = "Total Convites: R$ " + totalConvites.toFixed(2);
+
+                    const TOTALAPAGAR = totalTradicionais + totalConvites;
+                    document.getElementById("TOTALAPAGAR").innerText = "Total A PAGAR: R$ " + TOTALAPAGAR.toFixed(2);
+                    const SUBTOTAL = totalTradicionais + totalConvites;
+                    document.getElementById("SUBTOTAL").innerText = "SUBTOTAL: R$ " + TOTALAPAGAR.toFixed(2);
+                }
+
+                document.getElementById('inteira').addEventListener('submit', function (event) {
+                    alert("Por favor, preencha todos os campos obrigatórios!");
+                    event.preventDefault();
+                });
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

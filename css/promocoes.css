@@ -1,0 +1,19 @@
+body {
+    padding-top: 100px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(1, 0, 15) 90.4%);   
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.splide {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 10px;
+}

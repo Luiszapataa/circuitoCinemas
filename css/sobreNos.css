@@ -1,0 +1,62 @@
+
+.inicial{
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+
+.img-sobre{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    width: 350px;
+    height: 250px; 
+}
+
+.titulo{
+    color: #9715a8;
+    text-align: center;
+    font-size: 70px;
+    width: 110%;
+    margin-left: -70px;
+}
+
+.text-sobre{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.span {
+    color: #ce1ae6;
+   
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    
+}
+.conteudo{
+    text-align: center;
+}
+.mapinha{
+    color: black;
+    font-size: 45px;
+    text-align: left;
+}
+
+.mapaBox{
+    justify-content: center;
+    display: flex;
+    background: #262626;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto; 
+    box-shadow: 0px 0px 30px black;
+}
+
+
+
+
+
+

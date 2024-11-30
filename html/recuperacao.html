@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/recuperacao.css">
+    <link rel="shortcut icon" href="../src/header-footer/cineDev.jpg" type="image/x-icon">
+    <title>CineDev: Esqueceu a Senha</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container recuperarSenha">
+            <form>
+                <h1>RECUPERAR SENHA</h1>
+                <p>Por favor, insira o endereço de e-mail associado à sua conta.</p>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">
+                    <span id="message" onclick="recuperar()">Enviar E-mail de Recuperação</span>
+                </button>
+                <a href="login.html">Voltar para Login</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function recuperar(){
+            alert ("E-mail enviado com sucesso!")
+        }
+    </script>
+</body>
+</html>

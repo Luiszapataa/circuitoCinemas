@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../src/login/login.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    opacity: 90%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(78, 2, 94, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    max-width: 100%;
+    min-height: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #800080;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container input {
+    background-color: #fff;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container button {
+    background-color: #800080;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.container button a.botao {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container a {
+    color: #800080;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}

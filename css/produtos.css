@@ -1,0 +1,194 @@
+.corpo {
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(1, 0, 15) 90.4%);   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(1, 0, 15) 90.4%);   
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(1, 0, 15) 90.4%);   
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0);
+    width: 1000px;
+    text-align: left;
+}
+
+.card-image {
+    height: 250px;
+    padding: 20px;
+    border-radius: 70px;
+    margin-right: 10px;
+}
+
+.card-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    color: rgb(250, 247, 243);
+    margin-top: -50px;
+    font-size: 70px;
+    margin-bottom: 10px;
+
+}
+
+.card-description {
+    margin-top: 70px;
+    font-size: 21px;
+}
+
+.divisao {
+
+    margin-top: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #FFFFFF;
+}
+
+hr{
+    margin-left: -400px;
+    margin-right: -400px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;  
+   padding-left: 200px;
+}
+
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+    font-size: large;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px black; 
+}
+
+.custom-checkbox:hover .checkmark {
+    background-color: #b3b3b3;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #a812d1;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+    color: white;
+}
+
+
+
+
+
+.custom-adicionar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.custom-adicionar input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-adicionar .checkmark-adicionar {
+    display: flex;
+    justify-content: center;
+    width: 1040px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+    font-size: large;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 15px black; 
+}
+
+.img-carrinho{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.custom-adicionar .carrinho-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.custom-adicionar:hover .checkmark-adicionar {
+    background-color: #b3b3b3;
+}
+
+.custom-adicionar input[type="checkbox"]:checked ~ .checkmark-adicionar {
+    background-color: #a812d1;
+}
+
+.custom-adicionar .checkmark-adicionar:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-adicionar input[type="checkbox"]:checked ~ .checkmark-adicionar:after {
+    display: block;
+    color: white;
+}
+
